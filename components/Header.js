@@ -53,8 +53,8 @@ const Header = () => {
         <h1 className="uppercase">Logo</h1>
       </div>
       <nav
-        className={`gap-5 py-5 md:py-0 md:flex md:flex-row items-center space-x-1 transition-all ease-in-out duration-300 ${
-          open ? "flex flex-col" : "hidden"
+        className={`gap-5 py-5 md:py-0 md:flex md:flex-row items-center space-x-1 transition-all duration-300 z-10 absolute md:static w-screen md:w-auto md:shadow-none bg-white shadow-lg  ${
+          open ? "flex flex-col top-10" : "-top-96"
         }`}
       >
         {renderLinks()}
