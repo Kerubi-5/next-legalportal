@@ -56,7 +56,7 @@ const Header = () => {
       >
         {renderLinks()}
       </nav>
-      <div className="absolute top-3 right-14 md:static cursor-pointer">
+      <div className="absolute top-4 right-14 md:static cursor-pointer">
         {!isLoading &&
           (user ? (
             <Dropdown user={user} />
@@ -69,7 +69,7 @@ const Header = () => {
           ))}
       </div>
       <div
-        className="absolute top-6 right-6 md:hidden cursor-pointer"
+        className="absolute top-7 right-6 md:hidden cursor-pointer"
         onClick={() => setOpen(!open)}
       >
         {open ? <AiOutlineClose /> : <AiOutlineMenu />}
