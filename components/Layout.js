@@ -21,7 +21,7 @@ const Layout = ({ children }) => {
         image="https://pbs.twimg.com/profile_images/961218223168397314/k7ehkZsK_400x400.jpg"
       />
       <UserProvider>
-        <div className="dark">
+        <div className="">
           <Header />
           <main className="dark:bg-slate-900 dark:text-zinc-50 mx-auto px-4 font-poppins">
             {children}

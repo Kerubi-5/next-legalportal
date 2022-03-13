@@ -24,7 +24,7 @@ const Header = () => {
   ];
 
   const activeLink = (route) => {
-    return router.pathname === route ? "text-purple-500" : "";
+    return router.pathname === route ? "border-indigo-500" : "";
   };
 
   const renderLinks = () => {
@@ -32,7 +32,7 @@ const Header = () => {
       return (
         <Link key={link.link} href={link.link}>
           <a
-            className={`py-4 px-2 border-transparent border-b-4 text-gray-500 hover:border-purple-500 font-semibold transition-all ease-in-out duration-300  ${activeLink(
+            className={`py-4 px-2 border-transparent border-b-4 text-gray-500 hover:border-indigo-500 font-semibold transition-all ease-in-out duration-300 ${activeLink(
               link.link
             )}`}
           >

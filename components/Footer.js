@@ -1,4 +1,6 @@
 import Image from "next/image";
+import Link from "next/link";
+
 const Footer = () => {
   return (
     <footer className="p-4 bg-white sm:p-6 dark:bg-gray-800 shadow-inner">
@@ -32,9 +34,9 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="https://tailwindcss.com/" className="hover:underline">
-                  FAQ
-                </a>
+                <Link href="/faq">
+                  <a className="hover:underline">FAQ</a>
+                </Link>
               </li>
             </ul>
           </div>
