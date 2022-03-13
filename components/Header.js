@@ -48,12 +48,12 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-white shadow-lg md:px-4 md:flex md:justify-between items-center sticky top-0 mb-5 font-poppins">
+    <header className="bg-white shadow-lg md:px-4 md:flex md:justify-between items-center sticky top-0 mb-5 z-50 font-poppins">
       <div className="p-2">
         <h1 className="uppercase">Logo</h1>
       </div>
       <nav
-        className={`gap-5 py-5 md:py-0 md:flex md:flex-row items-center space-x-1 transition-all duration-300 z-10 absolute md:static w-screen md:w-auto md:shadow-none bg-white shadow-lg  ${
+        className={`bg-white gap-5 py-5 md:py-0 md:flex md:flex-row items-center space-x-1 transition-all duration-300 absolute md:static w-screen md:w-auto md:shadow-none shadow-lg  ${
           open ? "flex flex-col top-10" : "-top-96"
         }`}
       >
