@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Card from "../components/Card";
+import Fab from "../components/Fab";
 import dbConnect from "../lib/dbConnect";
 import Complaint from "../models/Complaint";
 
@@ -18,9 +19,10 @@ export default function Home({ complaints }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="h-screen">
+      <div className="h-screen relative">
         <div className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4">
           {renderComplaints()}
+          <Fab />
         </div>
       </div>
     </>
