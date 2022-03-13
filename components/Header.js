@@ -49,7 +49,7 @@ const Header = () => {
         <h1 className="uppercase">Logo</h1>
       </div>
       <nav
-        className={`bg-white gap-5 py-5 md:py-0 md:flex md:flex-row items-center space-x-1 transition-all duration-300 absolute md:static w-screen md:w-auto md:shadow-none shadow-lg  ${
+        className={`bg-white dark:bg-slate-800 gap-5 py-5 md:py-0 md:flex md:flex-row items-center space-x-1 transition-all duration-300 absolute md:static w-screen md:w-auto md:shadow-none shadow-lg  ${
           open ? "flex flex-col top-10" : "-top-96"
         }`}
       >
