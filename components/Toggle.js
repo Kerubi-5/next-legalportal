@@ -20,7 +20,7 @@ const Toggle = () => {
           }`}
           ></div>
         </div>
-        <p className="text-gray-700 dark:text-zinc-400 block px-4 py-2 text-sm">
+        <p className="text-gray-700 dark:text-zinc-400 block px-2 py-2 text-sm">
           {open ? "Dark" : "Light"}
         </p>
       </label>
