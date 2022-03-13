@@ -48,7 +48,7 @@ const Accordion = ({ title, children }) => {
       </h2>
       <div
         className={`text-justify p-5 border border-gray-200 dark:border-gray-700 dark:bg-gray-900 ${
-          open ? "" : "hidden"
+          open ? "block" : "hidden"
         }`}
       >
         {children}
