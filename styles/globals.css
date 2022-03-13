@@ -7,3 +7,33 @@
 * {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center px-6 py-2 text-sm font-medium text-center rounded;
+  }
+
+  .success {
+    @apply text-green-100 bg-green-500 hover:bg-green-600;
+  }
+
+  .danger {
+    @apply text-rose-100 bg-rose-500 hover:bg-rose-600;
+  }
+
+  .info {
+    @apply text-cyan-100 bg-cyan-500 hover:bg-cyan-600;
+  }
+
+  .success-outline {
+    @apply text-green-500 border border-green-500 hover:bg-green-600 hover:text-green-100;
+  }
+
+  .danger-outline {
+    @apply text-rose-500 border border-rose-500 hover:bg-rose-600 hover:text-rose-100;
+  }
+
+  .info-outline {
+    @apply text-cyan-500 border border-cyan-500 hover:bg-cyan-600 hover:text-cyan-100;
+  }
+}
