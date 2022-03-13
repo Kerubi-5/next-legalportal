@@ -62,9 +62,7 @@ const Header = () => {
             <Dropdown user={user} />
           ) : (
             <Link href="/api/auth/login">
-              <a className="inline-flex items-center px-6 py-2 text-sm font-medium text-center rounded text-green-500 border border-green-500 hover:bg-green-600 hover:text-green-100">
-                Login
-              </a>
+              <a className="btn success-outline">Login</a>
             </Link>
           ))}
       </div>

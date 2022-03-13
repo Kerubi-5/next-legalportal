@@ -38,9 +38,7 @@ const Dropdown = ({ user }) => {
           <Toggle />
           <div className="px-4 pb-2">
             <Link href="/api/auth/logout">
-              <a className="block items-center px-4 py-2 text-sm font-medium text-center rounded text-rose-500 border border-rose-500 hover:bg-rose-600 hover:text-rose-100">
-                Logout
-              </a>
+              <a className="btn block danger-outline">Logout</a>
             </Link>
           </div>
         </div>
