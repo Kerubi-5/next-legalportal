@@ -1,7 +1,6 @@
 import { UserProvider } from "@auth0/nextjs-auth0";
 import Footer from "./Footer";
 import Header from "./Header";
-import Head from "next/head";
 import Meta from "./Meta";
 
 const Layout = ({ children }) => {
@@ -27,6 +26,7 @@ const Layout = ({ children }) => {
           <main className="dark:bg-slate-900 dark:text-zinc-50 mx-auto px-4 font-poppins">
             {children}
           </main>
+          <Footer />
         </div>
       </UserProvider>
     </>
