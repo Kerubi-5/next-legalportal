@@ -4,7 +4,7 @@ const Complaint = ({ complaint }) => {
     "absolute opacity-0 group-hover:opacity-100 bg-black/75 inset-0 flex flex-col gap-5 align-middle justify-center cursor-pointer duration-300 rounded-lg";
 
   return (
-    <div className="rounded shadow-md shadow-indigo-600 dark:shadow-white dark:bg-slate-800 text-slate-600 dark:text-zinc-400 relative group max-w-sm grow">
+    <div className="rounded shadow-md shadow-indigo-600 dark:shadow-white dark:bg-slate-800 text-slate-600 dark:text-zinc-400 relative group">
       <div className="p-4">
         <div>
           <h2 className="text-xl font-bold text-indigo-600">
