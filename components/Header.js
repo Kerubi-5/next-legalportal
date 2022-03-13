@@ -57,13 +57,13 @@ const Header = () => {
         {!isLoading &&
           (user ? (
             <Link href="/api/auth/logout">
-              <a className="inline-flex items-center px-6 py-2 text-sm font-medium text-center rounded text-rose-100 bg-rose-500 hover:bg-rose-600">
+              <a className="inline-flex items-center px-6 py-2 text-sm font-medium text-center rounded text-rose-500 border border-rose-500 hover:bg-rose-600 hover:text-rose-100">
                 Logout
               </a>
             </Link>
           ) : (
             <Link href="/api/auth/login">
-              <a className="inline-flex items-center px-6 py-2 text-sm font-medium text-center rounded text-green-100 bg-green-500 hover:bg-green-600">
+              <a className="inline-flex items-center px-6 py-2 text-sm font-medium text-center rounded text-green-500 border border-green-500 hover:bg-green-600 hover:text-green-100">
                 Login
               </a>
             </Link>
