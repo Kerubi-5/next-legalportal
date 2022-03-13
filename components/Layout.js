@@ -1,4 +1,5 @@
 import { UserProvider } from "@auth0/nextjs-auth0";
+import Footer from "./Footer";
 import Header from "./Header";
 import Head from "next/head";
 import Meta from "./Meta";
@@ -21,10 +22,12 @@ const Layout = ({ children }) => {
         image="https://pbs.twimg.com/profile_images/961218223168397314/k7ehkZsK_400x400.jpg"
       />
       <UserProvider>
-        <Header />
-        <main className="container mx-auto px-4 dark font-poppins">
-          {children}
-        </main>
+        <div className="dark">
+          <Header />
+          <main className="dark:bg-slate-900 dark:text-zinc-50 mx-auto px-4 font-poppins">
+            {children}
+          </main>
+        </div>
       </UserProvider>
     </>
   );

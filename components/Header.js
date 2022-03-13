@@ -21,10 +21,6 @@ const Header = () => {
       name: "Advice",
       link: "/advice",
     },
-    {
-      name: "FAQ",
-      link: "/faq",
-    },
   ];
 
   const activeLink = (route) => {
@@ -48,7 +44,7 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-white shadow-lg md:px-4 md:flex md:justify-between items-center sticky top-0 mb-5 z-50 font-poppins">
+    <header className="bg-white dark:bg-slate-800 dark:text-zinc-50 shadow-md dark:shadow-slate-600 md:px-4 md:flex md:justify-between items-center sticky top-0 z-50 font-poppins">
       <div className="p-2">
         <h1 className="uppercase">Logo</h1>
       </div>
