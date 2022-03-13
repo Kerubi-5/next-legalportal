@@ -69,7 +69,7 @@ const Header = () => {
           ))}
       </div>
       <div
-        className="absolute top-7 right-6 md:hidden cursor-pointer"
+        className="absolute top-7 right-5 md:hidden cursor-pointer"
         onClick={() => setOpen(!open)}
       >
         {open ? <AiOutlineClose /> : <AiOutlineMenu />}
