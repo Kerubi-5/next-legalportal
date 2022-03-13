@@ -3,7 +3,7 @@ import Script from "next/script";
 const Meta = (props) => (
   <Head>
     <title>{props.title}</title>
-    <meta charset="utf-8"></meta>
+    <meta charSet="utf-8"></meta>
     <meta name="description" content={props.desc} />
     <meta property="og:type" content="website" />
     <meta name="og:title" property="og:title" content={props.title} />
