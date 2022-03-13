@@ -1,6 +1,15 @@
 import Head from "next/head";
+import Card from "../components/Card";
+import dbConnect from "../lib/dbConnect";
+import Complaint from "../models/Complaint";
 
-export default function Home() {
+export default function Home({ complaints }) {
+  const renderComplaints = () => {
+    return complaints.map((complaint) => {
+      return <Card key={complaint._id} complaint={complaint} />;
+    });
+  };
+
   return (
     <>
       <Head>
@@ -9,7 +18,21 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="h-screen">Index</div>
+      <div className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4">
+        {renderComplaints()}
+      </div>
     </>
   );
+}
+
+export async function getServerSideProps() {
+  await dbConnect();
+
+  const result = await Complaint.find({});
+  const complaints = result.map((doc) => {
+    const complaint = doc.toObject();
+    complaint._id = complaint._id.toString();
+    return complaint;
+  });
+  return { props: { complaints } };
 }
