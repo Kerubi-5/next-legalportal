@@ -18,8 +18,10 @@ export default function Home({ complaints }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4">
-        {renderComplaints()}
+      <div className="h-screen">
+        <div className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4">
+          {renderComplaints()}
+        </div>
       </div>
     </>
   );
