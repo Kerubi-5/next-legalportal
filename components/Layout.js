@@ -2,8 +2,10 @@ import { UserProvider } from "@auth0/nextjs-auth0";
 import Footer from "./Footer";
 import Header from "./Header";
 import Meta from "./Meta";
+import { useState } from "react";
 
 const Layout = ({ children }) => {
+  const [darkMode, setDarkMode] = useState(false);
   return (
     <>
       <Meta
@@ -21,7 +23,7 @@ const Layout = ({ children }) => {
         image="https://pbs.twimg.com/profile_images/961218223168397314/k7ehkZsK_400x400.jpg"
       />
       <UserProvider>
-        <div className="">
+        <div className={darkMode ? "dark" : ""}>
           <Header />
           <main className="dark:bg-slate-900 dark:text-zinc-50 mx-auto px-4 font-poppins">
             {children}
