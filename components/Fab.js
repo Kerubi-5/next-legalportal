@@ -60,13 +60,42 @@ const Fab = () => {
                 </svg>
               </div>
             </div>
-
-            <p>Modal content can go here</p>
-            <p>...</p>
-            <p>...</p>
-            <p>...</p>
-            <p>...</p>
-
+            <div className="grid gap-3 py-3">
+              <label className="block">
+                <span className="text-gray-700">Category</span>
+                <select
+                  className="
+                    block
+                    w-full
+                    mt-1
+                    rounded-md
+                    border-gray-300
+                    shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50
+                  "
+                >
+                  <option>Corporate event</option>
+                  <option>Wedding</option>
+                  <option>Birthday</option>
+                  <option>Other</option>
+                </select>
+              </label>
+              <label className="block">
+                <span className="text-gray-700">Category</span>
+                <input
+                  type="text"
+                  className="
+                    mt-1
+                    block
+                    w-full
+                    rounded-md
+                    border-gray-300
+                    shadow-sm
+                    focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50
+                  "
+                  placeholder=""
+                />
+              </label>
+            </div>
             <div className="flex justify-end pt-2 gap-2">
               <button className="btn danger" onClick={() => setOpen(false)}>
                 Close
